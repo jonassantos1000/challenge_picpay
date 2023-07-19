@@ -17,7 +17,7 @@ public class ValidationAuthorizationTransfer implements ValidationTransaction {
 	public void validate(Transaction transaction) {
 		TransactionAuthorization authTransfer = authorizationExternalService.checkAuthorization();
 		if (!authTransfer.message().equals("Autorizado")) {
-			throw new IllegalArgumentException("Transferencia não autorizada!");
+			throw new IllegalArgumentException("Operadora de pagamento recusou a transferência");
 		}
 	}
 

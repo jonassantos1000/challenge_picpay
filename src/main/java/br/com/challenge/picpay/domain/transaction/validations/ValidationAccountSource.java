@@ -2,6 +2,7 @@ package br.com.challenge.picpay.domain.transaction.validations;
 
 import org.springframework.stereotype.Component;
 
+import br.com.challenge.picpay.config.exception.IllegalTransactionRequest;
 import br.com.challenge.picpay.domain.transaction.Transaction;
 import jakarta.persistence.DiscriminatorValue;
 
@@ -13,7 +14,7 @@ public class ValidationAccountSource implements ValidationTransaction{
 		var typeUser = transaction.getSourceAccount().getUser().getClass().getAnnotation(DiscriminatorValue.class);
 
 		if (typeUser.value().equals("LOJISTA")) {
-			throw new IllegalArgumentException("Lojistas só podem receber transfêrencias");
+			throw new IllegalTransactionRequest("Lojistas só podem receber transfêrencias");
 		}
 	}
 
