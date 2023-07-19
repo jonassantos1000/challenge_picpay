@@ -8,8 +8,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import br.com.challenge.picpay.account.Account;
-import br.com.challenge.picpay.account.AccountRepository;
+import br.com.challenge.picpay.domain.account.Account;
+import br.com.challenge.picpay.domain.account.AccountRepository;
 import br.com.challenge.picpay.domain.user.User;
 import br.com.challenge.picpay.domain.user.UserComum;
 import br.com.challenge.picpay.domain.user.UserLojista;

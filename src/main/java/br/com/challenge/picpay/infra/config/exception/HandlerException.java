@@ -1,4 +1,4 @@
-package br.com.challenge.picpay.config.exception;
+package br.com.challenge.picpay.infra.config.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

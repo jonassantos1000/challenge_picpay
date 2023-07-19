@@ -4,7 +4,7 @@ import java.util.Objects;
 
 import org.hibernate.validator.constraints.br.CPF;
 
-import br.com.challenge.picpay.account.Account;
+import br.com.challenge.picpay.domain.account.Account;
 import jakarta.persistence.Column;
 import jakarta.persistence.DiscriminatorColumn;
 import jakarta.persistence.DiscriminatorType;

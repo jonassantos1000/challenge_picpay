@@ -1,4 +1,4 @@
-package br.com.challenge.picpay.config;
+package br.com.challenge.picpay.infra.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

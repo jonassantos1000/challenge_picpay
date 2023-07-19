@@ -1,4 +1,4 @@
-package br.com.challenge.picpay.account;
+package br.com.challenge.picpay.domain.account;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;

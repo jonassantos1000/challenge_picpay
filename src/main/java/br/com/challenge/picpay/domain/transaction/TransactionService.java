@@ -5,8 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import br.com.challenge.picpay.account.Account;
-import br.com.challenge.picpay.account.AccountRepository;
+import br.com.challenge.picpay.domain.account.Account;
+import br.com.challenge.picpay.domain.account.AccountRepository;
 import br.com.challenge.picpay.domain.transaction.validations.ValidationTransaction;
 
 @Service

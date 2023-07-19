@@ -1,4 +1,4 @@
-package br.com.challenge.picpay.account;
+package br.com.challenge.picpay.domain.account;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

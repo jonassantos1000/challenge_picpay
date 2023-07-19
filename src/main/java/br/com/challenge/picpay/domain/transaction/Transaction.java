@@ -3,7 +3,7 @@ package br.com.challenge.picpay.domain.transaction;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-import br.com.challenge.picpay.account.Account;
+import br.com.challenge.picpay.domain.account.Account;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

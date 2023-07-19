@@ -2,8 +2,8 @@ package br.com.challenge.picpay.domain.transaction.validations;
 
 import org.springframework.stereotype.Component;
 
-import br.com.challenge.picpay.config.exception.IllegalTransactionRequest;
 import br.com.challenge.picpay.domain.transaction.Transaction;
+import br.com.challenge.picpay.infra.config.exception.IllegalTransactionRequest;
 
 @Component("ValidationAccountDestination")
 public class ValidationAccountDestination implements ValidationTransaction{

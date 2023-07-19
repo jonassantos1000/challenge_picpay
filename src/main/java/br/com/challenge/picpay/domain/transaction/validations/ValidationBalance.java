@@ -4,8 +4,8 @@ import java.math.BigDecimal;
 
 import org.springframework.stereotype.Component;
 
-import br.com.challenge.picpay.config.exception.InsufficientFunds;
 import br.com.challenge.picpay.domain.transaction.Transaction;
+import br.com.challenge.picpay.infra.config.exception.InsufficientFunds;
 
 @Component("ValidationBalance")
 public class ValidationBalance implements ValidationTransaction{
