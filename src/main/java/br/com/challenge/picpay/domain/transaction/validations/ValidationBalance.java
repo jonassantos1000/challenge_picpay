@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 
 import org.springframework.stereotype.Component;
 
+import br.com.challenge.picpay.config.exception.InsufficientFunds;
 import br.com.challenge.picpay.domain.transaction.Transaction;
 
 @Component("ValidationBalance")
@@ -15,7 +16,7 @@ public class ValidationBalance implements ValidationTransaction{
 		BigDecimal balanceSource = transaction.getSourceAccount().getBalance();
 		
 		if (balanceSource.compareTo(value) < 0) {
-			throw new IllegalArgumentException("Saldo insuficiente");
+			throw new InsufficientFunds("Saldo insuficiente");
 		}
 	}
 
